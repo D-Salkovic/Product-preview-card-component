@@ -1,0 +1,136 @@
+:root {
+    /* Color variables */
+    --primary-1: hsl(158, 36%, 37%); /* Dark cyan */
+    --primary-2: hsl(30, 38%, 92%); /* Cream */
+
+    --neutral-1: hsl(212, 21%, 14%); /* Very dark blue */
+    --neutral-2: hsl(228, 12%, 48%); /* Dark grayish blue */
+    --neutral-3: hsl(0, 0%, 100%); /* White */
+
+    /* Typography variables */
+    --font-size: 15px;
+
+    --font-family-1: 'Montserrat', sans-serif;
+    --font-family-2: 'Fraunces', serif;
+
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Colors */
+
+.neutral-2 {
+    color: var(--neutral-2);
+}
+
+.neutral-3 {
+    color: var(--neutral-3);
+}
+
+
+/* Typography */
+
+.font-family-2 {
+    font-family: var(--font-family-2);
+}
+
+.font-weight-medium {
+    font-weight: var(--font-weight-medium);
+}
+
+.font-weight-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+
+/* Main */
+
+body {
+    background-color: var(--primary-2);
+    font-family: var(--font-family-1);
+    font-size: var(--font-size);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+/* Divs */
+.card {
+    background-color: var(--neutral-3);
+    width: 355px;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.banner {
+    width:355px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-1);
+    color: var(--neutral-3);
+    border-radius: 10px;
+}
+
+
+/* Elements */
+.item {
+    font-size: 12px;
+    letter-spacing: 0.3rem;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 10px 0;
+    line-height: 2rem;
+    color: var(--neutral-1);
+}
+
+.description {
+    margin: 15px 0;
+    line-height: 1.5rem;
+}
+
+.new-price {
+    color: var(--primary-1);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    margin: 0 10px;
+}
+
+.add-to-cart {
+    margin-left: 10px;
+}
+
+
+/* Effects */
+
+.button:active, .button:hover {
+    background-color: var(--neutral-1);
+}
